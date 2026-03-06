@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { useResume } from '../../context/ResumeContext';
-import { Resume } from '../../types/resume';
+import type { Resume } from '../../types';
 import ContactSection from './ContactSection';
 import SummarySection from './SummarySection';
 import ExperienceSection from './ExperienceSection';

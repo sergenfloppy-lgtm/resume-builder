@@ -1,5 +1,5 @@
 import { useResume } from '../../context/ResumeContext';
-import { Experience } from '../../types/resume';
+import type { Experience } from '../../types';
 
 const ExperienceSection = () => {
   const { resume, updateResume } = useResume();

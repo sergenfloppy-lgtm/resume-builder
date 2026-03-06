@@ -1,5 +1,5 @@
 import { useResume } from '../../context/ResumeContext';
-import { Education } from '../../types/resume';
+import type { Education } from '../../types';
 
 const EducationSection = () => {
   const { resume, updateResume } = useResume();

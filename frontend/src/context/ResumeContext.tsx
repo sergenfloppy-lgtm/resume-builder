@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { Resume } from '../types/resume';
+import type { Resume } from '../types';
 
 const STORAGE_KEY = 'resume-builder-data';
 

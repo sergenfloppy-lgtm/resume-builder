@@ -1,6 +1,8 @@
 import { useRef, useState } from 'react';
 import { useResume } from '../../context/ResumeContext';
 import ATSTemplate from './templates/ATSTemplate';
+import ModernTemplate from './templates/ModernTemplate';
+import CreativeTemplate from './templates/CreativeTemplate';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 
@@ -78,12 +80,8 @@ const Preview = () => {
         style={{ aspectRatio: '210/297' }}
       >
         {resume.template === 'ats' && <ATSTemplate resume={resume} />}
-        {resume.template === 'modern' && (
-          <div className="p-8 text-gray-500">Modern template coming soon...</div>
-        )}
-        {resume.template === 'creative' && (
-          <div className="p-8 text-gray-500">Creative template coming soon...</div>
-        )}
+        {resume.template === 'modern' && <ModernTemplate resume={resume} />}
+        {resume.template === 'creative' && <CreativeTemplate resume={resume} />}
       </div>
     </div>
   );

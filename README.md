@@ -4,13 +4,15 @@ A modern, ATS-friendly resume builder inspired by Resume.io. Build beautiful res
 
 ## Features
 
-- ✅ **ATS-Friendly Template** - Clean, single-column design optimized for Applicant Tracking Systems
+- ✅ **3 Professional Templates** 
+  - **ATS-Friendly** - Clean, single-column design optimized for Applicant Tracking Systems
+  - **Modern** - Two-column layout with dark blue sidebar and color accents
+  - **Creative** - Bold gradient header with colorful design elements
 - ✅ **Real-Time Preview** - See your changes instantly in a split-screen editor
 - ✅ **Auto-Save** - Your work is automatically saved to localStorage every 500ms
 - ✅ **Multiple Sections** - Contact info, summary, experience, education, skills, and projects
 - ✅ **PDF Export** - Download high-quality PDF resumes with one click
 - ✅ **JSON Import/Export** - Backup and restore your resume data
-- ⏳ **Multiple Templates** - Modern and Creative templates coming soon
 
 ## Tech Stack
 
@@ -65,23 +67,26 @@ resume-builder/
 ### v1.0 ✅ COMPLETE
 - [x] Basic editor with all sections
 - [x] ATS-friendly template
+- [x] Modern template (two-column with sidebar)
+- [x] Creative template (gradient header, colorful)
 - [x] Real-time preview
 - [x] Auto-save to localStorage
 - [x] PDF export (jsPDF + html2canvas)
 - [x] JSON import/export
+- [x] Template switcher
 
 ### v2.0 (Next)
 - [ ] Drag-and-drop section reordering
-- [ ] Modern template
-- [ ] Creative template
 - [ ] Dark mode
 - [ ] LinkedIn profile import
+- [ ] More template variations
 
 ### v3.0 (Future)
 - [ ] Export to DOCX
 - [ ] Backend with SQLite for multi-resume management
 - [ ] User accounts and cloud sync
 - [ ] Resume templates marketplace
+- [ ] AI-powered content suggestions
 
 ## Contributing
 

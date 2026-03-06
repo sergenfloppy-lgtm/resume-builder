@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import type { Resume } from '../types';
+import { generateId } from '../utils/id';
 
 const STORAGE_KEY = 'resume-builder-data';
 
@@ -10,7 +11,7 @@ interface ResumeContextType {
 }
 
 const defaultResume: Resume = {
-  id: crypto.randomUUID(),
+  id: generateId(),
   contact: {
     fullName: '',
     email: '',

@@ -1,12 +1,13 @@
 import { useResume } from '../../context/ResumeContext';
 import type { Experience } from '../../types';
+import { generateId } from '../../utils/id';
 
 const ExperienceSection = () => {
   const { resume, updateResume } = useResume();
 
   const addExperience = () => {
     const newExp: Experience = {
-      id: crypto.randomUUID(),
+      id: generateId(),
       company: '',
       position: '',
       location: '',

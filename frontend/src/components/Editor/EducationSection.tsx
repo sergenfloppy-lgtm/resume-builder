@@ -1,12 +1,13 @@
 import { useResume } from '../../context/ResumeContext';
 import type { Education } from '../../types';
+import { generateId } from '../../utils/id';
 
 const EducationSection = () => {
   const { resume, updateResume } = useResume();
 
   const addEducation = () => {
     const newEdu: Education = {
-      id: crypto.randomUUID(),
+      id: generateId(),
       school: '',
       degree: '',
       field: '',
